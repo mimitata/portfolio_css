@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal profile website</title>
+    <link rel="stylesheet" href="mimi.css">
+</head>
+<body>
+   <div id="header">
+   <div class="container">
+   <nav>
+     <img src="logo.JPG" class="logo">
+     <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Porfolio</a></li>
+        <li><a href="#">Contact</a></li>
+     </ul>
+   </nav>
+   <div class="header-text">
+        <p>WEB developer</p>
+        <h1>Hi, I'm<span> Mariem</span> <br>From Tunisia</h1>
+   </div>
+   </div>
+   </div> 
+   <!-----------------about----------->
+      <div id="about">
+         <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                  <img src="me.JPG">
+               </div>
+               <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>Welcome to my personal portfolio website! I'm thrilled to showcase my journey as a passionate
+                      web developer. With a blend of creativity and technical expertise, I've brought various projects
+                       to life that reflect my dedication to crafting seamless digital experiences. From front-end
+                        marvels using HTML, CSS, and JavaScript to dynamic back-end solutions with frameworks like 
+                        React and Django, my portfolio demonstrates my commitment to pushing boundaries and embracing 
+                        innovation. Feel free to explore my projects, delve into my coding style, and learn more about my 
+                        journey in the world of web development. Whether you're a fellow developer, a potential
+                         collaborator, or just curious about my work, I invite you to join me on this exciting adventure 
+                         of turning ideas into captivating realities</p>
+                         <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                           <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                           <p class="tab-links"onclick="opentab('education')" >Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                           <ul>
+                              <li><span>UI/UX</span><br>Designer Web/App interfaces</li>
+                              <li><span>Web Development</span><br>Web app Development</li>
+                              <li><span>App Development</span><br>Building Android/IOS apps</li>
+                           </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                           <ul>
+                              <li><span>2021-current</span><br>UI/UX Designe training</li>
+                              <li><span>2019-2021</span><br>UI/UX Designe Executive</li>
+                              <li><span>2016-2017</span><br>Internship</li>
+                           </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                           <ul>
+                              <li><span>2023</span><br>web development at GO MY CODE</li>
+                              <li><span>2023</span><br>front-end</li>
+                              <li><span>2023</span><br>back-end</li>
+                           </ul>
+                         </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script>
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tablinks = document.getElementsByClassName("tab-contents");
+
+         function opentab(tabname){
+            for(tablink of tablinks){
+               tablink.classlist.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+               tabcontent.classlist.remove("active-tab")
+            }
+            
+
+
+
+         }
+      </script>
+      </script>
+</body>
+</html>
